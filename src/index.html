@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Ильгиза</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100 text-gray-900 dark:bg-dark dark:text-light transition-colors duration-300 ease-in-out">
+    <header class="bg-gray-800 text-white p-4 transition-all duration-300 ease-in-out">
+        <nav class="container mx-auto flex justify-between">
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Главная</a></li>
+                <li><a href="#about" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Обо мне</a></li>
+                <li><a href="#skills" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Навыки</a></li>
+                <li><a href="#portfolio" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Портфолио</a></li>
+                <li><a href="#contact" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="container mx-auto text-center py-16">
+        <h1 class="text-4xl font-bold mb-4">Привет, я Ильгиз</h1>
+        <p class="text-lg mb-8 transition-opacity duration-300 ease-in-out hover:opacity-75">Я фронтенд-разработчик с опытом работы на React, Node.js, TypeScript и другими современными технологиями.</p>
+        <a href="#portfolio" class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300 ease-in-out">Посмотреть мои работы</a>
+        <div class="absolute right-0 custom_class1">
+            <img src="/src/face.png" alt="Это я" class="pic">
+        </div>
+    </section>
+
+    <section id="about" class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold mb-4">Обо мне</h2>
+        <p class="transition-opacity duration-300 ease-in-out hover:opacity-75">Меня зовут Ильгиз, я увлеченный фронтенд-разработчик с опытом создания пользовательских интерфейсов на React и Node.js. Я активно использую такие технологии, как Tailwind CSS, TypeScript и Express. В свободное время занимаюсь 3D-моделированием и дизайном в Figma и Adobe пакете.</p>
+
+    
+    </section>
+
+    <section id="skills" class="container mx-auto px-16 py-16 bg-gray-800">
+        <h2 class="text-3xl font-bold mb-4">Навыки</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="bg-gray-700 p-4 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Frontend</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React, TypeScript</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Backend</h3>
+                <ul>
+                    <li>Node.js, Express</li>
+                    <li>REST API</li>
+                </ul>
+            </div>
+            <div class="bg-gray-700 p-4 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Дизайн и 3D</h3>
+                <ul>
+                    <li>Figma, Adobe Creative Suite</li>
+                    <li>Blender 3D</li>
+                </ul>
+            </div>
+        </div>
+        <img src="skills.png" alt="Калькулятор фурнитуры для стеклянных козырьков" class="mb-4 rounded pic">
+    </section>
+
+
+
+    <section id="portfolio" class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold mb-4">Портфолио</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Проект 1 -->
+            <div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
+                <img src="project1.png" alt="Проект 1" class="mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Оптовый магазин одежды МАХИС</h3>
+                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="mb-2">Роль: <span class="font-semibold">Ведущий фронтенд-разработчик и UI/UX-дизайнер</span></p>
+                    <p class="mb-2"><span class="font-semibold">Описание роли:</span></p>
+                    <ul class="list-disc pl-5">
+                        <li class="mb-2">Создание адаптивного и интуитивно понятного интерфейса магазина с использованием технологий HTML, CSS, и JavaScript, обеспечивающего беспрепятственный пользовательский опыт на различных устройствах.</li>
+                        <li class="mb-2">Дизайн всех основных страниц магазина, включая каталог продукции, корзину, процесс оформления заказа и личный кабинет клиента.</li>
+                        <li class="mb-2">Взаимодействие с backend-разработчиками для интеграции API и обеспечения бесперебойного обмена данными между клиентской частью и сервером.</li>
+                        <li class="mb-2">Оптимизация запросов и работы с данными для улучшения производительности и скорости загрузки страниц.</li>
+                        <li class="mb-2">Разработка и стилизация интерфейса с использованием React и Tailwind CSS для достижения высокой производительности и удобочитаемого кода.</li>
+                        <li class="mb-2">Реализация динамических функций на сайте, таких как фильтрация, сортировка и поиск товаров в режиме реального времени с использованием JavaScript и React.</li>
+                        <li class="mb-2">Проведение исследований пользовательского опыта и создание интерактивных прототипов в Figma для тестирования и улучшения интерфейса.</li>
+                        <li class="mb-2">Разработка фирменного стиля и визуального оформления магазина, включая работу с цветовой палитрой, типографикой и иконографикой.</li>
+                        <li class="mb-2">Проведение кросс-браузерного и кросс-платформенного тестирования для обеспечения корректного отображения и функциональности на всех типах устройств.</li>
+                        <li class="mb-2">Оптимизация кода и ассетов для минимизации времени загрузки страниц и улучшения пользовательского опыта.</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/khataki/maxisproject" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+                <a href="https://maxis-kzn.it-serena.ru/" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
+            </div>
+            
+            <!-- Проект 2 -->
+            <div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
+                <img src="codingtimer.png" alt="CodingTimer" class="mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">CodingTimer</h3>
+                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="mb-2"><span class="font-semibold">Описание проекта:</span> CodingTimer — это удобный инструмент для разработчиков, созданный с целью отслеживания времени, затраченного на изучение различных инструментов и языков фронтенд-разработки. Этот проект идеально подходит для тех, кто хочет вести учет своих учебных часов и анализировать, как они распределяются между разными технологиями.</p>
+                    <p class="mb-2"><span class="font-semibold">Функциональность:</span></p>
+                    <ul class="list-disc pl-5 mb-2">
+                        <li>Запоминание данных: система сохраняет введенные данные, что позволяет пользователям продолжать отслеживать свои результаты даже после закрытия приложения.</li>
+                        <li>Поддержка популярных языков: возможность выбора из предустановленных языков программирования или добавление собственного.</li>
+                        <li>Аналитика времени: приложение ведет учет количества часов, потраченных на изучение каждого языка программирования ежедневно и в целом.</li>
+                        <li>Визуализация данных: приложение использует Charts.js для создания наглядных графиков.</li>
+                    </ul>
+                    <p class="mb-2"><span class="font-semibold">Планы на будущее:</span> Добавление многоязычной поддержки и встроенного таймера для отслеживания времени в реальном времени.</p>
+                    <p class="mb-2"><span class="font-semibold">Технологии:</span> HTML, CSS, JavaScript, Charts.js</p>
+                </div>
+                <a href="https://github.com/khataki/CodingTimer" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+                <a href="https://khataki.github.io/CodingTimer/" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
+            </div>
+
+            <!-- Проект 3 -->
+
+            <div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
+                <img src="calcfurn.png" alt="Калькулятор фурнитуры для стеклянных козырьков" class="mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Калькулятор фурнитуры для стеклянных козырьков</h3>
+                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="mb-2"><span class="font-semibold">Описание проекта:</span> Калькулятор фурнитуры для стеклянных козырьков — это специализированный инструмент, предназначенный для расчета необходимого количества и типа фурнитуры при установке стеклянных козырьков.</p>
+                    <p class="mb-2"><span class="font-semibold">Функциональность:</span></p>
+                    <ul class="list-disc pl-5 mb-2">
+                        <li>Ввод данных: пользователи могут вводить размеры козырька, вес стекла и другие параметры, необходимые для расчета.</li>
+                        <li>Расчет фурнитуры: калькулятор автоматически рассчитывает количество необходимой фурнитуры на основе введенных данных.</li>
+                        <li>Подбор фурнитуры: программа предоставляет рекомендации по выбору конкретных типов фурнитуры, учитывая характеристики стекла и архитектурные особенности.</li>
+                        <li>Интерактивные подсказки: встроенные подсказки помогают пользователям вводить корректные данные и понимать, какие параметры влияют на конечный расчет.</li>
+                    </ul>
+                    <p class="mb-2"><span class="font-semibold">Планы на будущее:</span> Поддержка различных типов козырьков, интеграция с базой данных поставщиков и экспорт результатов расчета.</p>
+                    <p class="mb-2"><span class="font-semibold">Технологии:</span> HTML, CSS, JavaScript, Node.js, Express.js, jQuery</p>
+                </div>
+                <a href="https://github.com/khataki/calculatefurn" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+                <a href="https://khataki.github.io/calculatefurn/" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
+            </div>
+
+            <!-- Проект 4 -->
+
+            <div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
+                <img src="/src/helmet.png" alt="MemoryDesk" class="mb-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">MemoryDesk</h3>
+                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="mb-2"><span class="font-semibold">Описание проекта:</span> MemoryDesk — это интерактивное веб-приложение, созданное в память о моем прадеде, ветеране Второй мировой войны. Проект использует технологию Mapbox для визуализации ключевых мест, связанных с его жизнью и военными подвигами.</p>
+                    <p class="mb-2"><span class="font-semibold">Функциональность:</span></p>
+                    <ul class="list-disc pl-5 mb-2">
+                        <li>Интерактивная карта: приложение отображает карту с использованием Mapbox, где отмечены значимые локации, связанные с жизнью моего прадеда.</li>
+                        <li>Информация о локациях: при клике на метки на карте пользователи могут увидеть подробную информацию о каждом месте, включая исторические факты и фотографии.</li>
+                        <li>Анимированная маршрутизация: визуализация маршрутов, которые проделал мой прадед во время своей службы, с использованием анимаций.</li>
+                    </ul>
+                    <p class="mb-2"><span class="font-semibold">Планы на будущее:</span> Добавление новых локаций и мультимедийных материалов, а также возможность пользователям добавлять свои семейные истории.</p>
+                    <p class="mb-2"><span class="font-semibold">Технологии:</span> HTML, CSS, JavaScript, Mapbox, Leaflet.js</p>
+                </div>
+                <a href="https://github.com/khataki/MemoryDesk" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+            </div>
+            
+<!-- Проект 5 -->
+
+<div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
+    <img src="elaria_wars.png" alt="Элария: Войны фракций" class="mb-4 rounded">
+    <h3 class="text-xl font-semibold mb-2">Элария: Войны фракций</h3>
+    <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+        <p class="mb-2"><span class="font-semibold">Описание проекта:</span> Элария: Войны фракций — это стратегическая игра в жанре RTS, где игроки оказываются в мире на грани разрушения, выбирая свою фракцию и участвуя в эпических битвах за власть и ресурсы.</p>
+        <p class="mb-2"><span class="font-semibold">Основные особенности версии 1.0:</span></p>
+        <ul class="list-disc pl-5 mb-2">
+            <li>Октагональные клетки: уникальная структура карты для стратегического планирования.</li>
+            <li>Режим RTS: принятие решений в реальном времени.</li>
+            <li>Рандомная генерация карты: каждое прохождение предлагает уникальную карту.</li>
+            <li>Разные фракции: Люди, Эльфы, Гномы, каждая с уникальными лидерами и способностями.</li>
+            <li>Прокачка юнитов: развитие юнитов для адаптации к изменяющимся условиям боя.</li>
+            <li>Постройка сооружений: укрепление позиций и обеспечение ресурсами.</li>
+            <li>Битвы между юнитами: тактические сражения, определяющие исход игры.</li>
+            <li>Население и расы: рост населения зависит от количества пищи.</li>
+            <li>Торговля: возможность обмена ресурсами между фракциями.</li>
+        </ul>
+        <p class="mb-2"><span class="font-semibold">Планы на будущее:</span> Добавление новых фракций, расширение мира и введение глобальных событий.</p>
+        <p class="mb-2"><span class="font-semibold">Технологии:</span> Игровой движок, графика и анимация, AI для управления враждебными фракциями.</p>
+    </div>
+    <a href="https://github.com/your-github/elarion-wars" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+</div>
+            
+            <!-- Добавьте больше проектов по необходимости -->
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto py-16 bg-gray-800">
+        <h2 class="text-3xl font-bold mb-4">Контакты</h2>
+        <p class="mb-4">Email: <a href="mailto:your.email@example.com" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">your.email@example.com</a></p>
+        <p class="mb-4"><a href="https://www.linkedin.com/in/your-profile" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">LinkedIn</a> | <a href="https://github.com/your-github" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a></p>
+        <form action="submit_form.php" method="post" class="bg-gray-700 p-4 rounded shadow">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-300">Имя:</label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full p-2 bg-gray-800 text-gray-100 border border-gray-600 rounded transition-colors duration-300 ease-in-out" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-300">Email:</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full p-2 bg-gray-800 text-gray-100 border border-gray-600 rounded transition-colors duration-300 ease-in-out" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-300">Сообщение:</label>
+                <textarea id="message" name="message" class="mt-1 block w-full p-2 bg-gray-800 text-gray-100 border border-gray-600 rounded transition-colors duration-300 ease-in-out" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300 ease-in-out">Отправить</button>
+        </form>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 text-center py-4 transition-all duration-300 ease-in-out">
+        <p>&copy; 2024 Ильгиз. Все права защищены.</p>
+    </footer>
+
+    <script src="/src/scripts.js"></script>
+</body>
+</html>
