@@ -9,22 +9,26 @@
 </head>
 <body class="font-sans bg-gray-100 text-gray-900 dark:bg-dark dark:text-light transition-colors duration-300 ease-in-out">
 
-    <header class="bg-gray-200 text-gray-900 p-4 transition-all duration-300 z-10 ease-in-out dark:bg-gray-800 dark:textgray-700 ">
+    <header class="bg-gray-800 text-white p-4 transition-all duration-300 z-10 ease-in-out">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Бургер-меню (только для мобильных устройств) -->
+            <button id="burger-menu" class="text-white block md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
 
-        <nav class="container mx-auto flex justify-between">
-            <ul class="flex space-x-4">
-                <li><a id="nav-home" href="#home" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Главная</a></li>
-                <li><a id="nav-about" href="#about" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Обо мне</a></li>
-                <li><a id="nav-skills" href="#skills" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Навыки</a></li>
-                <li><a id="nav-portfolio" href="#portfolio" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Портфолио</a></li>
-                <li><a id="nav-contact" href="#contact" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Контакты</a></li>
-           <li>        <div class="flex justify-start items-center">
-            <button onclick="setLanguage('ru')" class="mr-2 text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">RU</button>
-            <button onclick="setLanguage('en')" class="text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">EN</button>
-        </div></li>
-            </ul>
-
-        </nav>
+            <div class="flex items-center space-x-4"> </div>
+    
+            <!-- Навигация -->
+            <nav id="nav-menu" class="fixed z-30 top-0 left-0 w-3/4 h-full bg-gray-800 transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:static md:flex md:justify-center">
+                <ul class="flex flex-col space-y-4 p-6 md:flex-row md:space-y-0 md:space-x-4 md:p-0">
+                    <li><a href="#home" class="text-gray-200 hover:text-gray-400 transition-colors duration-300 ease-in-out">Главная</a></li>
+                    <li><a href="#about" class="text-gray-200 hover:text-gray-400 transition-colors duration-300 ease-in-out">Обо мне</a></li>
+                    <li><a href="#skills" class="text-gray-200 hover:text-gray-400 transition-colors duration-300 ease-in-out">Навыки</a></li>
+                    <li><a href="#portfolio" class="text-gray-200 hover:text-gray-400 transition-colors duration-300 ease-in-out">Портфолио</a></li>
+                    <li><a href="#contact" class="text-gray-200 hover:text-gray-400 transition-colors duration-300 ease-in-out">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div class="absolute right-0 custom_class1 z-20">
         <img src="./src/images/face.png" alt="Это я" class="pic z-20">
