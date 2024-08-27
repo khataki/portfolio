@@ -1,12 +1,12 @@
 {
-    "greeting": "Hello, I am Ilgiz",
-    "description": "I am a frontend developer with experience in React, Node.js, TypeScript, and other modern technologies.",
+    "greeting": "Hello, I'm Ilgiz",
+    "description": "I am a frontend developer with experience working on React, Node.js, TypeScript, and other modern technologies.",
     "view_portfolio": "View My Work",
     "about_me_title": "About Me",
-    "about_me_intro": "Hello! My name is Ilgiz, and I am a frontend developer with two years of experience in web development. I specialize in creating user-friendly and beautiful interfaces using HTML, CSS, and JavaScript. In my work, I actively use React and TypeScript, as well as Tailwind CSS for fast and efficient development.",
+    "about_me_intro": "Hi! My name is Ilgiz, I am a frontend developer with two years of experience in web development. I specialize in creating user-friendly and visually appealing interfaces using HTML, CSS, and JavaScript. I actively use React and TypeScript in my work, as well as Tailwind CSS for quick and efficient development.",
     "about_me_backend": "On the backend, I work with Node.js and Express, creating REST APIs to support frontend applications. This approach allows me to understand and manage the entire project system, ensuring its stable and reliable operation.",
-    "about_me_design": "Besides coding, I have been engaged in design and 3D modeling for four years. I use tools such as Figma, Adobe Creative Suite, and Blender 3D. These skills allow me to create interfaces that are not only functional but also visually appealing.",
-    "about_me_conclusion": "I enjoy combining technical knowledge with design to create projects that are both user-friendly and aesthetically pleasing. I am always open to new ideas and believe that good communication is the foundation of a successful project. I constantly learn and seek ways to improve my skills.",
+    "about_me_design": "In addition to coding, I have been involved in design and 3D modeling for four years. I use tools like Figma, Adobe Suite, and Blender 3D. These skills allow me to create interfaces that are not only functional but also visually appealing.",
+    "about_me_conclusion": "I enjoy combining technical knowledge and design to create projects that are both user-friendly and aesthetically pleasing. I am always open to new ideas and believe that good communication is the key to a successful project. I am constantly learning and looking for ways to improve my skills.",
     "skills_title": "Skills",
     "frontend_title": "Frontend",
     "frontend_skills": {
@@ -23,5 +23,34 @@
     "design_skills": {
         "figma_adobe": "Figma, Adobe Creative Suite",
         "blender": "Blender 3D"
-    }
+    },
+    "project_title_maxis": "Wholesale Clothing Store MAXIS",
+    "role": "Role: Lead Frontend Developer and UI/UX Designer",
+    "role_description": "Role Description:",
+    "description-project-maxis": [
+        "Created a responsive and intuitive store interface using HTML, CSS, and JavaScript, ensuring a seamless user experience across different devices.",
+        "Designed all main store pages, including product catalog, shopping cart, checkout process, and client personal account.",
+        "Collaborated with backend developers to integrate APIs and ensure smooth data exchange between client-side and server-side.",
+        "Optimized queries and data processing to improve performance and page load speed.",
+        "Developed and styled the interface using React and Tailwind CSS to achieve high performance and readable code.",
+        "Implemented dynamic features on the site, such as filtering, sorting, and real-time product search using JavaScript and React.",
+        "Conducted user experience research and created interactive prototypes in Figma to test and improve the interface.",
+        "Developed the store's branding and visual identity, including work with color palettes, typography, and iconography.",
+        "Performed cross-browser and cross-platform testing to ensure correct display and functionality on all device types.",
+        "Optimized code and assets to minimize page load time and improve user experience.",
+        "The project was not completed, as the client refused to pay at the last moment, so I am demonstrating a pre-release version that requires adjustments."
+    ],
+    "project_title_timer": "CodingTimer",
+    "description_project_timer": "CodingTimer is a handy tool for developers, created to track the time spent learning various frontend development tools and languages. This project is perfect for those who want to keep track of their study hours and analyze how they are distributed among different technologies.",
+    "functionality_title_timer": "Functionality:",
+    "functionality_list_timer": [
+        "Data retention: The system saves entered data, allowing users to continue tracking their results even after closing the application.",
+        "Support for popular languages: Choose from preset programming languages or add your own.",
+        "Time analytics: The app tracks the number of hours spent learning each programming language daily and overall.",
+        "Data visualization: The app uses Charts.js to create clear and informative graphs."
+    ],
+    "future_plans_timer": "Future Plans:",
+    "future_plans_description_timer": "Adding multilingual support and an integrated timer for real-time tracking.",
+    "technologies_title_timer": "Technologies:",
+    "technologies_list_timer": "HTML, CSS, JavaScript, Charts.js"
 }

@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru" class="dark">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body class="font-sans bg-gray-100 text-gray-900 dark:bg-dark dark:text-light transition-colors duration-300 ease-in-out">
-    <header class="bg-gray-800 text-white p-4 transition-all duration-300 z-10 ease-in-out">
+
+    <button id="theme-toggle" class="flex absolute left-5 top-5  items-center transition">
+        <i id="sun-icon" class="fas fa-sun w-6 h-6 mr-2  light:hidden"></i>
+    </button>
+    <header class="bg-gray-200 text-gray-900 p-4 transition-all duration-300 z-10 ease-in-out dark:bg-gray-800 dark:textgray-700 ">
+        <div class="absolute left-10 top-20 flex justify-start items-center">
+            <button onclick="setLanguage('ru')" class="mr-2 text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">RU</button>
+            <button onclick="setLanguage('en')" class="text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">EN</button>
+        </div>
         <nav class="container mx-auto flex justify-between">
             <ul class="flex space-x-4">
-                <li><a href="#home" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Главная</a></li>
-                <li><a href="#about" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Обо мне</a></li>
-                <li><a href="#skills" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Навыки</a></li>
-                <li><a href="#portfolio" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Портфолио</a></li>
-                <li><a href="#contact" class="hover:text-gray-400 transition-colors duration-300 ease-in-out">Контакты</a></li>
-                <li>
-                    <button onclick="setLanguage('ru')" class="mr-2  text-white    hover:text-blue-700 transition duration-300 ease-in-out">RU</button>
-                    <button onclick="setLanguage('en')" class=" text-white  hover:text-blue-700 transition duration-300 ease-in-out">EN</button>
-                </li>
+                <li><a href="#home" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Главная</a></li>
+                <li><a href="#about" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Обо мне</a></li>
+                <li><a href="#skills" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Навыки</a></li>
+                <li><a href="#portfolio" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Портфолио</a></li>
+                <li><a href="#contact" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Контакты</a></li>
             </ul>
         </nav>
-
     </header>
     <div class="absolute right-0 custom_class1 z-20">
         <img src="./src/images/face.png" alt="Это я" class="pic z-20">
@@ -49,112 +53,113 @@
         </p>
     </section>
     
-    <section id="skills" class="container mx-auto px-4 py-16 bg-gray-800">
-        <h2 id="skills_title" class="text-3xl font-bold mb-4">Навыки</h2>
+    <section id="skills" class="container mx-auto px-4 py-4 rounded bg-gray-200 dark:bg-gray-700">
+        <h2 id="skills_title" class="text-3xl font-bold mb-4 text-gray-700 dark:text-gray-200">Навыки</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="bg-gray-700 p-4 rounded shadow">
-                <h3 id="frontend_title" class="text-xl font-semibold mb-2">Frontend</h3>
+            <div class="bg-gray-300 dark:bg-gray-800 p-4 rounded shadow">
+                <h3 id="frontend_title" class="text-xl font-semibold mb-2 text-gray-700 dark:text-gray-300">Frontend</h3>
                 <ul>
-                    <li class="mb-2 flex items-center">
+                    <li class="mb-2 flex items-center text-gray-700 dark:text-gray-300">
                         <span id="html_css_js">HTML, CSS, JavaScript</span>
                         <div class="flex ml-2">
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
                         </div>
                     </li>
-                    <li class="mb-2 flex items-center">
+                    <li class="mb-2 flex items-center text-gray-700  dark:text-gray-300">
                         <span id="react_ts">React, TypeScript</span>
                         <div class="flex ml-2">
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
                         </div>
                     </li>
-                    <li class="mb-2 flex items-center">
+                    <li class="mb-2 flex items-center text-gray-700  dark:text-gray-300">
                         <span id="tailwind">Tailwind CSS</span>
                         <div class="flex ml-2">
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="bg-gray-700 p-4 rounded shadow">
-                <h3 id="backend_title" class="text-xl font-semibold mb-2">Backend</h3>
+            <div class="bg-gray-300 dark:bg-gray-800 p-4 rounded shadow">
+                <h3 id="backend_title" class="text-xl font-semibold mb-2 textgray-700  dark:text-gray-300">Backend</h3>
                 <ul>
-                    <li class="mb-2 flex items-center">
+                    <li class="mb-2 flex items-center textgray-700  dark:text-gray-300">
                         <span id="node_express">Node.js, Express</span>
                         <div class="flex ml-2">
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
                         </div>
                     </li>
-                    <li class="mb-2 flex items-center">
+                    <li class="mb-2 flex items-center textgray-700  dark:text-gray-300">
                         <span id="rest_api">REST API</span>
                         <div class="flex ml-2">
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="bg-gray-700 p-4 rounded shadow">
-                <h3 id="design_title" class="text-xl font-semibold mb-2">Дизайн и 3D</h3>
+            <div class="bg-gray-300 dark:bg-gray-800 p-4 rounded shadow">
+                <h3 id="design_title" class="text-xl font-semibold mb-2 textgray-700  dark:text-gray-300">Дизайн и 3D</h3>
                 <ul>
-                    <li class="mb-2 flex items-center">
+                    <li class="mb-2 flex items-center textgray-700  dark:text-gray-300">
                         <span id="figma_adobe">Figma, Adobe Creative Suite</span>
                         <div class="flex ml-2">
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
                         </div>
                     </li>
-                    <li class="mb-2 flex items-center">
+                    <li class="mb-2 flex items-center textgray-700  dark:text-gray-300">
                         <span id="blender">Blender 3D</span>
                         <div class="flex ml-2">
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-blue-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
-                            <div class="h-2 w-2 bg-gray-500 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-blue-500 dark:bg-blue-400 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
+                            <div class="h-2 w-2 bg-gray-500 dark:bg-gray-600 mr-1"></div>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="text-center">
-            <img src="./src/images/infrontoflaptop.png" alt="Калькулятор фурнитуры для стеклянных козырьков" class="z-20 rounded pic absolute inline-block">
-        </div>
+
     </section>
 
 
-    <section id="portfolio" class="container mx-auto px-16 py-16">
+    <section id="portfolio" class="container relative mx-auto px-16 py-16">
+        <div class="text-center">
+            <img src="./src/images/infrontoflaptop.png" alt="Я, опять я" class="z-20 rounded pic absolute -top-16 inline-block">
+        </div>
         <h2 class="text-3xl font-bold mb-4">Портфолио</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Проект 1 -->
-            <div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
-                <img src="./src/images/maxis.png" alt="Проект 1" class="mb-4 hover:scale-125 transition-all duration-500 rounded">
-                <h3 class="text-xl font-semibold mb-2">Оптовый магазин одежды МАХИС</h3>
-                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
-                    <p class="mb-2">Роль: <span class="font-semibold">Ведущий фронтенд-разработчик и UI/UX-дизайнер</span></p>
-                    <p class="mb-2"><span class="font-semibold">Описание роли:</span></p>
-                    <ul class="list-disc pl-5">
+            <div class="bg-gray-300 dark:bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
+                <img src="./src/images/maxis.png" alt="Project 1" class="mb-4 hover:scale-125 transition-all duration-500 rounded">
+                <h3 id="project_title_maxis" class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Оптовый магазин одежды МАХИС</h3>
+                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out text-gray-700 dark:text-gray-300">
+                    <p class="mb-2" id="role"><span class="font-semibold">Роль:</span> Ведущий фронтенд-разработчик и UI/UX-дизайнер</p>
+                    <p class="mb-2" id="role_description"><span class="font-semibold">Описание роли:</span></p>
+                    <ul id="description_list" class="list-disc pl-5">
                         <li class="mb-2">Создание адаптивного и интуитивно понятного интерфейса магазина с использованием технологий HTML, CSS, и JavaScript, обеспечивающего беспрепятственный пользовательский опыт на различных устройствах.</li>
                         <li class="mb-2">Дизайн всех основных страниц магазина, включая каталог продукции, корзину, процесс оформления заказа и личный кабинет клиента.</li>
                         <li class="mb-2">Взаимодействие с backend-разработчиками для интеграции API и обеспечения бесперебойного обмена данными между клиентской частью и сервером.</li>
@@ -165,60 +170,66 @@
                         <li class="mb-2">Разработка фирменного стиля и визуального оформления магазина, включая работу с цветовой палитрой, типографикой и иконографикой.</li>
                         <li class="mb-2">Проведение кросс-браузерного и кросс-платформенного тестирования для обеспечения корректного отображения и функциональности на всех типах устройств.</li>
                         <li class="mb-2">Оптимизация кода и ассетов для минимизации времени загрузки страниц и улучшения пользовательского опыта.</li>
-                        <li class="mb-2">Проект не был окончен, заказчик в последний момент отказался оплачивать работу, потому демонстрирую предрелизную версию, которая требует правок</li>
+                        <li class="mb-2">Проект не был окончен, заказчик в последний момент отказался оплачивать работу, потому демонстрирую предрелизную версию, которая требует правок.</li>
                     </ul>
                 </div>
-                <a href="https://github.com/khataki/maxisproject" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
-                <a href="https://maxis-kzn.it-serena.ru/" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
+                <a href="https://github.com/khataki/maxisproject" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+                <a href="https://maxis-kzn.it-serena.ru/" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">Demo</a>
             </div>
             
             <!-- Проект 2 -->
-            <div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
+            <div class="bg-gray-300 dark:bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
                 <img src="./src/images/timer.png" alt="CodingTimer" class="mb-4 hover:scale-125 transition-all duration-500 rounded">
-                <h3 class="text-xl font-semibold mb-2">CodingTimer</h3>
-                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
-                    <p class="mb-2"><span class="font-semibold">Описание проекта:</span> CodingTimer — это удобный инструмент для разработчиков, созданный с целью отслеживания времени, затраченного на изучение различных инструментов и языков фронтенд-разработки. Этот проект идеально подходит для тех, кто хочет вести учет своих учебных часов и анализировать, как они распределяются между разными технологиями.</p>
-                    <p class="mb-2"><span class="font-semibold">Функциональность:</span></p>
-                    <ul class="list-disc pl-5 mb-2">
-                        <li>Запоминание данных: система сохраняет введенные данные, что позволяет пользователям продолжать отслеживать свои результаты даже после закрытия приложения.</li>
-                        <li>Поддержка популярных языков: возможность выбора из предустановленных языков программирования или добавление собственного.</li>
-                        <li>Аналитика времени: приложение ведет учет количества часов, потраченных на изучение каждого языка программирования ежедневно и в целом.</li>
-                        <li>Визуализация данных: приложение использует Charts.js для создания наглядных графиков.</li>
+                <h3 id="project_title_timer" class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">CodingTimer</h3>
+                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out text-gray-700 dark:text-gray-300 project-timer">
+                    <p id="description_project_timer" class="mb-2"><span class="font-semibold" id="functionality_description_timer">Описание проекта:</span> CodingTimer — это удобный инструмент для разработчиков, созданный с целью отслеживания времени, затраченного на изучение различных инструментов и языков фронтенд-разработки. Этот проект идеально подходит для тех, кто хочет вести учет своих учебных часов и анализировать, как они распределяются между разными технологиями.</p>
+                    <p class="mb-2"><span class="font-semibold" id="functionality_title_timer">Функциональность:</span></p>
+                    <ul id="functionality_list_timer" class="list-disc pl-5 mb-2">
+                        <ul class="list-disc pl-5 mb-2">
+                            <li>Запоминание данных: система сохраняет введенные данные, что позволяет пользователям продолжать отслеживать свои результаты даже после закрытия приложения.</li>
+                            <li>Поддержка популярных языков: возможность выбора из предустановленных языков программирования или добавление собственного.</li>
+                            <li>Аналитика времени: приложение ведет учет количества часов, потраченных на изучение каждого языка программирования ежедневно и в целом.</li>
+                            <li>Визуализация данных: приложение использует Charts.js для создания наглядных графиков.</li>
+                        </ul>
                     </ul>
-                    <p class="mb-2"><span class="font-semibold">Планы на будущее:</span> Добавление многоязычной поддержки и встроенного таймера для отслеживания времени в реальном времени.</p>
-                    <p class="mb-2"><span class="font-semibold">Технологии:</span> HTML, CSS, JavaScript, Charts.js</p>
+                    <p class="mb-2 future-plans"><span class="font-semibold" id="future_plans_timer">Планы на будущее:</span></p>
+                    <p id="future_plans_description_timer" class="mb-2 future-plans-description">Добавление многоязычной поддержки и встроенного таймера для отслеживания времени в реальном времени.</p>
+                    <p class="mb-2 technologies-title"><span class="font-semibold" id="technologies_title_timer">Технологии:</span></p>
+                    <p id="technologies_list_timer" class="mb-2 technologies-list">HTML, CSS, JavaScript, Charts.js</p>
                 </div>
-                <a href="https://github.com/khataki/CodingTimer" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
-                <a href="https://khataki.github.io/CodingTimer/" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
+                <a href="https://github.com/khataki/CodingTimer" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+                <a href="https://khataki.github.io/CodingTimer/" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
             </div>
 
             <!-- Проект 3 -->
 
-            <div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
-                <img src="./src/images/calcfurn.png" alt="Калькулятор фурнитуры для стеклянных козырьков" class="mb-4 hover:scale-125 transition-all duration-500 rounded">
-                <h3 class="text-xl font-semibold mb-2">Калькулятор фурнитуры для стеклянных козырьков</h3>
-                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
-                    <p class="mb-2"><span class="font-semibold">Описание проекта:</span> Калькулятор фурнитуры для стеклянных козырьков — это специализированный инструмент, предназначенный для расчета необходимого количества и типа фурнитуры при установке стеклянных козырьков.</p>
-                    <p class="mb-2"><span class="font-semibold">Функциональность:</span></p>
-                    <ul class="list-disc pl-5 mb-2">
+            <div class="bg-gray-300 dark:bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
+                <img src="./src/images/calcfurn.png" alt="Калькулятор фурнитуры для стеклянных козырьков" class="mb-4 hover:scale-110 transition-all duration-500 rounded mx-auto">
+                <h3 id="project_title_furn" class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Калькулятор фурнитуры для стеклянных козырьков</h3>
+                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out text-gray-700 dark:text-gray-300 project-furn">
+                    <p id="description_project_furn" class="mb-2"><span class="font-semibold" id="functionality_description_furn">Описание проекта:</span> Калькулятор фурнитуры для стеклянных козырьков — это специализированный инструмент, предназначенный для расчета необходимого количества и типа фурнитуры при установке стеклянных козырьков.</p>
+                    <p class="mb-2"><span class="font-semibold" id="functionality_title_furn">Функциональность:</span></p>
+                    <ul id="functionality_list_furn" class="list-disc pl-5 mb-2">
                         <li>Ввод данных: пользователи могут вводить размеры козырька, вес стекла и другие параметры, необходимые для расчета.</li>
                         <li>Расчет фурнитуры: калькулятор автоматически рассчитывает количество необходимой фурнитуры на основе введенных данных.</li>
                         <li>Подбор фурнитуры: программа предоставляет рекомендации по выбору конкретных типов фурнитуры, учитывая характеристики стекла и архитектурные особенности.</li>
                         <li>Интерактивные подсказки: встроенные подсказки помогают пользователям вводить корректные данные и понимать, какие параметры влияют на конечный расчет.</li>
                     </ul>
-                    <p class="mb-2"><span class="font-semibold">Планы на будущее:</span> Поддержка различных типов козырьков, интеграция с базой данных поставщиков и экспорт результатов расчета.</p>
-                    <p class="mb-2"><span class="font-semibold">Технологии:</span> HTML, CSS, JavaScript, Node.js, Express.js, jQuery</p>
+                    <p class="mb-2 future-plans"><span class="font-semibold" id="future_plans_furn">Планы на будущее:</span></p>
+                    <p id="future_plans_description_furn" class="mb-2 future-plans-description">Поддержка различных типов козырьков, интеграция с базой данных поставщиков и экспорт результатов расчета.</p>
+                    <p class="mb-2 technologies-title"><span class="font-semibold" id="technologies_title_furn">Технологии:</span></p>
+                    <p id="technologies_list_furn" class="mb-2 technologies-list">HTML, CSS, JavaScript, Node.js, Express.js, jQuery</p>
                 </div>
-                <a href="https://github.com/khataki/calculatefurn" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
-                <a href="https://khataki.github.io/calculatefurn/" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
+                <a href="https://github.com/khataki/calculatefurn" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+                <a href="https://khataki.github.io/calculatefurn/" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
             </div>
 
             <!-- Проект 4 -->
 
-            <div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
-                <img src="./src/images/helmet.png" alt="MemoryDesk" class="mb-4 hover:scale-125 transition-all duration-500 rounded">
-                <h3 class="text-xl font-semibold mb-2">MemoryDesk</h3>
-                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+            <div class="bg-gray-300 dark:bg-gray-700 project-block p-4 rounded shadow cursor-pointer transition-all duration-300" onclick="toggleDescription(this)">
+                <img src="./src/images/helmet.png" alt="MemoryDesk" class="mb-4 hover:scale-110 transition-all duration-500 rounded">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">MemoryDesk</h3>
+                <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out text-gray-700 dark:text-gray-300">
                     <p class="mb-2"><span class="font-semibold">Описание проекта:</span> MemoryDesk — это интерактивное веб-приложение, созданное в память о моем прадеде, ветеране Второй мировой войны. Проект использует технологию Mapbox для визуализации ключевых мест, связанных с его жизнью и военными подвигами.</p>
                     <p class="mb-2"><span class="font-semibold">Функциональность:</span></p>
                     <ul class="list-disc pl-5 mb-2">
@@ -229,15 +240,14 @@
                     <p class="mb-2"><span class="font-semibold">Планы на будущее:</span> Добавление новых локаций и мультимедийных материалов, а также возможность пользователям добавлять свои семейные истории.</p>
                     <p class="mb-2"><span class="font-semibold">Технологии:</span> HTML, CSS, JavaScript, Mapbox, Leaflet.js</p>
                 </div>
-                <a href="https://github.com/khataki/MemoryDesk" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+                <a href="https://github.com/khataki/MemoryDesk" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">GitHub</a>
             </div>
             
 <!-- Проект 5 -->
-
-<div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
-    <img src="./src/images/knight_helmet.png" alt="Убийца драконов" class="mb-4 hover:scale-125 transition-all duration-500 rounded">
-    <h3 class="text-xl font-semibold mb-2">Убийца драконов</h3>
-    <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+<div class="bg-gray-300 dark:bg-gray-700 project-block p-4 rounded shadow cursor-pointer " onclick="toggleDescription(this)">
+    <img src="./src/images/knight_helmet.png" alt="Убийца драконов" class="mb-4 hover:scale-110 transition-all duration-500">
+    <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Убийца драконов</h3>
+    <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out text-gray-700 dark:text-gray-300">
         <p class="mb-2"><span class="font-semibold">Описание проекта:</span> "Убийца драконов" — это небольшая пошаговая ролевая игра, в которой игроку предстоит спасти деревушку от страшного дракона. Игра разработана с использованием HTML, CSS и JavaScript и включает в себя базовые элементы RPG.</p>
         <p class="mb-2"><span class="font-semibold">Функциональность:</span></p>
         <ul class="list-disc pl-5 mb-2">
@@ -251,16 +261,15 @@
         <p class="mb-2"><span class="font-semibold">Планы на будущее:</span> В будущем проект может быть расширен с добавлением новых врагов, улучшенной графики и более сложной боевой системы.</p>
         <p class="mb-2"><span class="font-semibold">Технологии:</span> HTML, CSS, JavaScript</p>
     </div>
-    <a href="https://github.com/khataki/Turn-based-RPG" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
-    <a href="https://khataki.github.io/Turn-based-RPG/" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
+    <a href="https://github.com/khataki/Turn-based-RPG" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+    <a href="https://khataki.github.io/Turn-based-RPG/" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">Демо</a>
 </div>
 
 <!-- Проект 6 -->
-
-<div class="bg-gray-700 project-block p-4 rounded shadow cursor-pointer" onclick="toggleDescription(this)">
-    <img src="./src/images/mozgeezondbe.png" alt="Шкафчик мыслей" class="mb-4 hover:scale-125 transition-all duration-500 rounded">
-    <h3 class="text-xl font-semibold mb-2">Шкафчик мыслей</h3>
-    <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+<div class="bg-gray-300 dark:bg-gray-700 project-block p-4 rounded shadow" onclick="toggleDescription(this)">
+    <img src="./src/images/mozgeezondbe.png" alt="Шкафчик мыслей" class="mb-4 hover:scale-110 transition-all duration-500">
+    <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Шкафчик мыслей</h3>
+    <div class="description max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out text-gray-700 dark:text-gray-300">
         <p class="mb-2"><span class="font-semibold">Описание проекта:</span> "Шкафчик мыслей" — это цифровое пространство, вдохновленное одноименной механикой из игры Disco Elysium, созданное для организации и структурирования мыслей и решений. Пользователи могут записывать свои проблемы и решения, создавая логически связанные записи в интуитивно понятной структуре.</p>
         <p class="mb-2"><span class="font-semibold">Основные особенности:</span></p>
         <ul class="list-disc pl-5 mb-2">
@@ -273,44 +282,35 @@
         <p class="mb-2"><span class="font-semibold">Планы на будущее:</span> Категоризация мыслей, интеграция с календарем и поддержка экспорта записей.</p>
         <p class="mb-2"><span class="font-semibold">Технологии:</span> HTML, CSS, React, Node.js, Express.js, MongoDB</p>
     </div>
-    <a href="https://github.com/your-github/thought-cabinet" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> | 
+    <a href="https://github.com/your-github/thought-cabinet" class="text-blue-800 dark:text-blue-300 hover:underline transition-colors duration-300 ease-in-out">GitHub</a> 
 </div>
-
-<script>
-    function toggleDescription(element) {
-        const description = element.querySelector('.description');
-        if (description.style.maxHeight) {
-            description.style.maxHeight = null;
-            description.style.opacity = 0;
-        } else {
-            description.style.maxHeight = description.scrollHeight + 'px';
-            description.style.opacity = 1;
-        }
-    }
-</script>
-            
-            <!-- Добавьте больше проектов по необходимости -->
+                      <!-- Добавить больше проектов по необходимости -->
         </div>
     </section>
 
-    <section id="contact" class="container mb-10 mx-auto px-16 py-16 bg-gray-800">
-        <h2 class="text-3xl font-bold mb-4">Контакты</h2>
-        <p class="mb-4">Email: <a href="mailto:khataki1337@gmail.com" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">khataki1337@gmail.com</a></p>
-        <p class="mb-4"><a href="#" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">LinkedIn</a> | <a href="https://github.com/khataki" class="text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a></p>
-        <form action="https://formspree.io/f/xwpeyoev" method="POST" class="bg-gray-700 p-4 rounded shadow">
-            <div class="mb-4">
-                <label for="name" class="block text-sm font-medium text-gray-300">Имя:</label>
-                <input type="text" id="name" name="name" class="mt-1 block w-full p-2 bg-gray-800 text-gray-100 border border-gray-600 rounded transition-colors duration-300 ease-in-out" required>
+    <section id="contact" class="container mb-10 mx-auto px-4 py-8 bg-gray-300 dark:bg-gray-800 rounded-lg shadow-lg transition-all duration-300">
+        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Контакты</h2>
+        <p class="mb-4 text-gray-700 dark:text-gray-300">Email: 
+            <a href="mailto:khataki1337@gmail.com" class="text-blue-800 dark:text-blue-400 hover:underline transition-colors duration-300 ease-in-out">khataki1337@gmail.com</a>
+        </p>
+        <p class="mb-6">
+            <a href="#" class="text-blue-800 dark:text-blue-400 hover:underline transition-colors duration-300 ease-in-out">LinkedIn</a> | 
+            <a href="https://github.com/khataki" class="text-blue-800 dark:text-blue-400 hover:underline transition-colors duration-300 ease-in-out">GitHub</a>
+        </p>
+        <form action="https://formspree.io/f/xwpeyoev" method="POST" class="bg-gray-100 dark:bg-gray-700 p-6 rounded shadow-lg transition-all duration-300">
+            <div class="mb-6">
+                <label for="name" class="block text-sm font-medium text-gray-800 dark:text-gray-300">Имя:</label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full p-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 rounded transition-colors duration-300 ease-in-out" required>
             </div>
-            <div class="mb-4">
-                <label for="email" class="block text-sm font-medium text-gray-300">Email:</label>
-                <input type="email" id="email" name="email" class="mt-1 block w-full p-2 bg-gray-800 text-gray-100 border border-gray-600 rounded transition-colors duration-300 ease-in-out" required>
+            <div class="mb-6">
+                <label for="email" class="block text-sm font-medium text-gray-800 dark:text-gray-300">Email:</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full p-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 rounded transition-colors duration-300 ease-in-out" required>
             </div>
-            <div class="mb-4">
-                <label for="message" class="block text-sm font-medium text-gray-300">Сообщение:</label>
-                <textarea id="message" name="message" class="mt-1 block w-full p-2 bg-gray-800 text-gray-100 border border-gray-600 rounded transition-colors duration-300 ease-in-out" required></textarea>
+            <div class="mb-6">
+                <label for="message" class="block text-sm font-medium text-gray-800 dark:text-gray-300">Сообщение:</label>
+                <textarea id="message" name="message" class="mt-1 block w-full p-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 rounded transition-colors duration-300 ease-in-out" required></textarea>
             </div>
-            <button type="submit" class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300 ease-in-out">Отправить</button>
+            <button type="submit" class="w-full sm:w-auto bg-blue-600 dark:bg-blue-700 text-white py-3 px-6 rounded hover:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-300 ease-in-out">Отправить</button>
         </form>
     </section>
 
