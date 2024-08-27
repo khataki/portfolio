@@ -38,7 +38,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 function setLanguage(lang) {
-    fetch(`./lang/${lang}.json`)
+    fetch(`src/lang/${lang}.json`)
         .then(response => response.json())
         .then(data => {
             document.getElementById('greeting').textContent = data.greeting;
