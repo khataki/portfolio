@@ -6,13 +6,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
       },
       colors: {
         dark: {
-          DEFAULT: '#1a202c',
-          light: '#2d3748',
-          lighter: '#4a5568',
+          DEFAULT: '#edf2f7',
+          light: '#e2e8f0',
+          lighter: '#cbd5e0',
         },
         light: {
           DEFAULT: '#edf2f7',
