@@ -1012,6 +1012,11 @@ body {
   background-color: rgb(26 32 44 / var(--tw-bg-opacity));
 }
 
+.dark\:text-light:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(247 250 252 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
