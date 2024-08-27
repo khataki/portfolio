@@ -52,5 +52,10 @@
     "future_plans_timer": "Future Plans:",
     "future_plans_description_timer": "Adding multilingual support and an integrated timer for real-time tracking.",
     "technologies_title_timer": "Technologies:",
-    "technologies_list_timer": "HTML, CSS, JavaScript, Charts.js"
+    "technologies_list_timer": "HTML, CSS, JavaScript, Charts.js",
+    "nav-home": "Home",
+    "nav-about": "About",
+    "nav-skills": "Skills",
+    "nav-portfolio": "Portfolio",
+    "nav-contact": "Contact"
 }

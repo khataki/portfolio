@@ -9,21 +9,18 @@
 </head>
 <body class="font-sans bg-gray-100 text-gray-900 dark:bg-dark dark:text-light transition-colors duration-300 ease-in-out">
 
-    <button id="theme-toggle" class="flex absolute left-5 top-5  items-center transition">
-        <i id="sun-icon" class="fas fa-sun w-6 h-6 mr-2  light:hidden"></i>
-    </button>
     <header class="bg-gray-200 text-gray-900 p-4 transition-all duration-300 z-10 ease-in-out dark:bg-gray-800 dark:textgray-700 ">
-        <div class="absolute left-10 top-20 flex justify-start items-center">
+        <div class="absolute left-10 top-4 flex justify-start items-center">
             <button onclick="setLanguage('ru')" class="mr-2 text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">RU</button>
             <button onclick="setLanguage('en')" class="text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">EN</button>
         </div>
         <nav class="container mx-auto flex justify-between">
             <ul class="flex space-x-4">
-                <li><a href="#home" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Главная</a></li>
-                <li><a href="#about" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Обо мне</a></li>
-                <li><a href="#skills" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Навыки</a></li>
-                <li><a href="#portfolio" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Портфолио</a></li>
-                <li><a href="#contact" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Контакты</a></li>
+                <li><a id="nav-home" href="#home" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Главная</a></li>
+                <li><a id="nav-about" href="#about" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Обо мне</a></li>
+                <li><a id="nav-skills" href="#skills" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Навыки</a></li>
+                <li><a id="nav-portfolio" href="#portfolio" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Портфолио</a></li>
+                <li><a id="nav-contact" href="#contact" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Контакты</a></li>
             </ul>
         </nav>
     </header>

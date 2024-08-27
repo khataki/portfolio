@@ -41,6 +41,11 @@ function setLanguage(lang) {
     fetch(`src/lang/${lang}.json`)
         .then(response => response.json())
         .then(data => {
+            document.querySelector('#nav-home').textContent = data['nav-home'];
+            document.querySelector('#nav-about').textContent = data['nav-about'];
+            document.querySelector('#nav-skills').textContent = data['nav-skills'];
+            document.querySelector('#nav-portfolio').textContent = data['nav-portfolio'];
+            document.querySelector('#nav-contact').textContent = data['nav-contact'];
             document.getElementById('greeting').textContent = data.greeting;
             document.getElementById('description').textContent = data.description;
             document.getElementById('view_portfolio').textContent = data.view_portfolio;
@@ -61,8 +66,8 @@ function setLanguage(lang) {
             document.getElementById('figma_adobe').textContent = data.design_skills.figma_adobe;
             document.getElementById('blender').textContent = data.design_skills.blender;
             // Для проекта "Оптовый магазин одежды МАХИС"
-            document.querySelector('h3.project-maxis-title').textContent = data["project_title_maxis"];
-            document.querySelector('.description.project-maxis-role p:first-child').innerHTML = data["role"];
+            document.querySelector('#project_title_maxis').textContent = data["project_title_maxis"];
+            document.querySelector('#description.project-maxis-role p:first-child').innerHTML = data["role"];
             const maxisDescriptionList = document.querySelector('.description.project-maxis ul');
             maxisDescriptionList.innerHTML = data["description-project-maxis"]
                 .map(item => `<li class="mb-2">${item}</li>`)
@@ -90,33 +95,12 @@ setLanguage(savedLanguage);
 const themeToggleBtn = document.getElementById('theme-toggle');
 const htmlElement = document.documentElement;
 const sunIcon = document.getElementById('sun-icon');
-const moonIcon = document.getElementById('moon-icon');
 
-themeToggleBtn.addEventListener('click', () => {
-  if (htmlElement.classList.contains('dark')) {
-    console.log('Switching to light theme');
-    htmlElement.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
-    sunIcon.classList.add('hidden');
-    moonIcon.classList.remove('hidden');
-  } else {
-    console.log('Switching to dark theme');
-    htmlElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-    sunIcon.classList.remove('hidden');
-    moonIcon.classList.add('hidden');
-  }
+document.addEventListener('DOMContentLoaded', () => {
+    // Проверка настроек темы пользователя и установка класса 'dark' на элемент <html>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
 });
-
-// Установка темы при загрузке страницы
-const savedTheme = localStorage.getItem('theme') || 'light';
-if (savedTheme === 'dark') {
-  htmlElement.classList.add('dark');
-  sunIcon.classList.remove('hidden');
-  moonIcon.classList.add('hidden');
-} else {
-  htmlElement.classList.remove('dark');
-  sunIcon.classList.add('hidden');
-  moonIcon.classList.remove('hidden');
-}
-
