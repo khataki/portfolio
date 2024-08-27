@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class', // Активируем темную тему через класс
   content: [
     "./src/**/*.{html,js}",
     "./index.html",
@@ -10,14 +11,9 @@ module.exports = {
       },
       colors: {
         dark: {
-          DEFAULT: '#edf2f7',
-          light: '#e2e8f0',
-          lighter: '#cbd5e0',
-        },
-        light: {
-          DEFAULT: '#edf2f7',
-          dark: '#e2e8f0',
-          darker: '#cbd5e0',
+          DEFAULT: '#1a202c', // Основной темный цвет (например, почти черный)
+          light: '#2d3748',   // Светлее (например, темно-серый)
+          lighter: '#4a5568', // Еще светлее (например, серый)
         },
       },
     },
