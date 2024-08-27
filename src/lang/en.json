@@ -1,0 +1,27 @@
+{
+    "greeting": "Hello, I am Ilgiz",
+    "description": "I am a frontend developer with experience in React, Node.js, TypeScript, and other modern technologies.",
+    "view_portfolio": "View My Work",
+    "about_me_title": "About Me",
+    "about_me_intro": "Hello! My name is Ilgiz, and I am a frontend developer with two years of experience in web development. I specialize in creating user-friendly and beautiful interfaces using HTML, CSS, and JavaScript. In my work, I actively use React and TypeScript, as well as Tailwind CSS for fast and efficient development.",
+    "about_me_backend": "On the backend, I work with Node.js and Express, creating REST APIs to support frontend applications. This approach allows me to understand and manage the entire project system, ensuring its stable and reliable operation.",
+    "about_me_design": "Besides coding, I have been engaged in design and 3D modeling for four years. I use tools such as Figma, Adobe Creative Suite, and Blender 3D. These skills allow me to create interfaces that are not only functional but also visually appealing.",
+    "about_me_conclusion": "I enjoy combining technical knowledge with design to create projects that are both user-friendly and aesthetically pleasing. I am always open to new ideas and believe that good communication is the foundation of a successful project. I constantly learn and seek ways to improve my skills.",
+    "skills_title": "Skills",
+    "frontend_title": "Frontend",
+    "frontend_skills": {
+        "html_css_js": "HTML, CSS, JavaScript",
+        "react_ts": "React, TypeScript",
+        "tailwind": "Tailwind CSS"
+    },
+    "backend_title": "Backend",
+    "backend_skills": {
+        "node_express": "Node.js, Express",
+        "rest_api": "REST API"
+    },
+    "design_title": "Design and 3D",
+    "design_skills": {
+        "figma_adobe": "Figma, Adobe Creative Suite",
+        "blender": "Blender 3D"
+    }
+}
