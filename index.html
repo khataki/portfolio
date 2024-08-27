@@ -10,10 +10,7 @@
 <body class="font-sans bg-gray-100 text-gray-900 dark:bg-dark dark:text-light transition-colors duration-300 ease-in-out">
 
     <header class="bg-gray-200 text-gray-900 p-4 transition-all duration-300 z-10 ease-in-out dark:bg-gray-800 dark:textgray-700 ">
-        <div class="absolute left-10 top-4 flex justify-start items-center">
-            <button onclick="setLanguage('ru')" class="mr-2 text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">RU</button>
-            <button onclick="setLanguage('en')" class="text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">EN</button>
-        </div>
+
         <nav class="container mx-auto flex justify-between">
             <ul class="flex space-x-4">
                 <li><a id="nav-home" href="#home" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Главная</a></li>
@@ -21,7 +18,12 @@
                 <li><a id="nav-skills" href="#skills" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Навыки</a></li>
                 <li><a id="nav-portfolio" href="#portfolio" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Портфолио</a></li>
                 <li><a id="nav-contact" href="#contact" class="text-gray-800 hover:text-gray-400 transition-colors duration-300 ease-in-out dark:text-gray-200 dark:hover:text-gray-600">Контакты</a></li>
+           <li>        <div class="flex justify-start items-center">
+            <button onclick="setLanguage('ru')" class="mr-2 text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">RU</button>
+            <button onclick="setLanguage('en')" class="text-gray-800 hover:text-blue-700 transition duration-300 ease-in-out dark:text-gray-200 dark:hover:text-blue-300">EN</button>
+        </div></li>
             </ul>
+
         </nav>
     </header>
     <div class="absolute right-0 custom_class1 z-20">
